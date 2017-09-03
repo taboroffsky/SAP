@@ -1,0 +1,166 @@
+﻿html, body {
+    height: 100%;
+}
+
+body{
+    padding-top:50px;
+}
+
+
+section{
+    min-height:100%;
+    padding: 5%;
+}
+
+#services, #contacts{
+    background-color: #b1b1b1;
+}
+
+.mycontent {
+    width: 100%;
+    color: #000;
+    background-color: rgb(232,232,232);
+    background-color: rgba(232,232,232, 0.4);
+    padding:50px 5px;
+    border: 2px #ddd solid;
+    border-radius:40px;
+}
+
+
+#home {
+    background: url('http://lorempixel.com/1920/1080') no-repeat center;
+    background-size: cover;
+}
+
+#about, #business{
+    background-color:#d1d1d1;
+}
+
+.navbutton{
+    position:fixed;
+    right:15px;
+    top:100px;
+    height:120px;
+    z-index:1000;
+    opacity: 0.8;
+}
+
+#mainnav{
+    top:0;
+    left:0;
+    width:100%;
+    height:50px;
+    position:fixed;
+    background:#000000;
+    color: #fff;
+    overflow:hidden;
+    margin:0;
+}
+
+.nav{
+    padding:0;    
+}
+
+.nav > li{
+    display:inline-block;
+    list-style-type:none;
+    width : 120px;
+}
+
+.nav > li > a{
+    display: block;    
+    padding:15px 0 15px 0;    
+    text-decoration:none;
+    color:floralwhite;
+    text-align:center;
+}
+
+#mainnav nav ul{
+    padding:0;
+    margin:0;
+}
+
+.nav > li > a:hover{
+    background-color:#333;
+    outline: none;    
+}
+
+.image{
+    float:left;
+    padding:5px;
+}
+
+.nav .active{
+    background-color:#999;
+}
+
+#contact-form{
+    margin:20px auto;
+    padding: 20px;
+    border:1px solid #eeeeee;
+}
+
+#contact-form textarea{
+    height:200px;
+    width:300px;
+}
+
+#contact-form label{
+    display:block;
+}
+
+#contact-form input,
+#contact-form textarea{
+    font-size: 16px;
+    margin-bottom:5px;
+}
+
+
+
+
+
+
+/* MEDIA QUERIES SECTION*/
+
+
+
+@media(max-width:480px){
+    img{
+        width:100%;
+    }
+    .nav{
+        display:none;
+    }
+
+    .navtwo {
+        display: block;
+    }
+        .navtwo > li {
+            list-style-type: none;
+            display: inline-block;
+            width: 15%;
+        }
+
+            .navtwo > li > a {
+                display: block;
+                padding: 15px 0;
+                text-align:center;
+                font-weight:bold;
+                background:#000;
+                color:aliceblue;
+            }
+
+            .navtwo > li > a:hover{
+                background:#333;
+                outline:none;
+            }
+
+            .navtwo .active{
+                background-color:#999;
+            }
+
+            #contact-form textarea{
+                height:200px;
+                width:100%;
+            }
+}
